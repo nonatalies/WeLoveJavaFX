@@ -1,0 +1,299 @@
+* {
+    -fx-pink-color: #e92063;
+    -fx-dark-gray-color: #3a3937;
+}
+
+#tableLabel {
+    -fx-text-fill: #bbdefb;
+    -fx-font-size: 18;
+    -fx-font-family: "Proxima Nova Bold";
+}
+
+.slider {
+    -fx-track-color: -fx-dark-gray-color;
+}
+
+.slider .track {
+    -fx-pref-height: 4.5;
+}
+
+.thumb-active-color {
+    -fx-background-color: white !important;
+}
+
+.close-button-active-color {
+    -fx-background-color: #cd1a2b !important;
+}
+
+.top-bar-button-active-color {
+    -fx-background-color: #3f3f3f !important;
+}
+
+.slider .thumb {
+    -fx-background-color: transparent;
+    -fx-pref-height: 10;
+    -fx-pref-width: 10;
+}
+
+.button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+
+.toggle-button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+
+#playSongButton .ikonli-font-icon {
+    -fx-icon-code: "fltfmz-play-24";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 30
+}
+
+#playSongButton:selected .ikonli-font-icon {
+    -fx-icon-code: "fltfmz-pause-24";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 30;
+}
+
+#shuffleButton .ikonli-font-icon {
+    -fx-icon-code: "eva-shuffle-2-outline";
+    -fx-icon-size: 30;
+}
+
+#shuffleButton:selected .ikonli-font-icon {
+    -fx-icon-color: -fx-pink-color;
+}
+
+#previousSongButton .ikonli-font-icon {
+    -fx-icon-code: "fltfmz-previous-24";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 30;
+}
+
+#nextSongButton .ikonli-font-icon {
+    -fx-icon-code: "fltfmz-next-24";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 30;
+}
+
+#repeatSongButton .ikonli-font-icon  {
+    -fx-icon-code: "fltfal-arrow-repeat-all-24";
+    -fx-icon-size: 26;
+}
+
+#repeatSongButton:selected .ikonli-font-icon {
+    -fx-icon-color: -fx-pink-color;
+}
+
+#folderButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2f-folder-open";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 35;
+}
+
+#minimizeButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2w-window-minimize";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#maximizeButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2w-window-maximize";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#maximizeButton:selected .ikonli-font-icon {
+    -fx-icon-code: "mdi2w-window-restore";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#closeButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2w-window-close";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#favoriteButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2h-heart-outline";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 15;
+}
+
+#favoriteButton:selected .ikonli-font-icon {
+    -fx-icon-code: "mdi2h-heart";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 15;
+}
+
+#favoriteSongsButton .ikonli-font-icon {
+    -fx-icon-code: "eva-heart-outline";
+    -fx-icon-size: 35;
+}
+
+#favoriteSongsButton:selected .ikonli-font-icon {
+    -fx-icon-code: "eva-heart";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 35;
+}
+
+#albumImage {
+    -fx-effect: dropshadow(gaussian, grey, 30, 0.5, 0, 0);
+}
+
+#controlPane {
+    -fx-background-color: linear-gradient(to top, #d5fbfe, #f3e4df);
+}
+
+#volumeSlider .track {
+    -fx-background-color: linear-gradient(to right, -fx-track-color 50%, #a9a9a9 50%) !important;
+}
+
+#durationSlider .track {
+    -fx-background-color: linear-gradient(to right, -fx-track-color 0%, #a9a9a9 0%) !important;
+}
+
+#songsListTable {
+   -fx-background-color: #313233;
+   -fx-border-color: transparent;
+   -fx-border-width: 1;
+}
+
+#songsListTable .column-header {
+    -fx-background-color: transparent;
+}
+
+#songsListTable .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: #dcdcdc;
+}
+
+#songsListTable .column-header-background {
+   -fx-background-color: #313233;
+}
+
+.cell-style, #songsListTable .table-row-cell {
+    -fx-border-width: 0;
+    -fx-cell-size: 25;
+    -fx-padding: 0;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-table-cell-border-color: transparent;
+    -fx-control-inner-background: #313233;
+    -fx-control-inner-background-alt: #3c3c3d;
+}
+
+.favorite-button-padding {
+    -fx-alignment: CENTER;
+}
+
+.table-view .table-column#songNumber {
+    -fx-alignment: CENTER-RIGHT;
+    -fx-padding: 5;
+}
+
+.table-view .column-header#songNumber .label {
+    -fx-alignment: CENTER-RIGHT;
+    -fx-padding: 5;
+}
+
+.table-view .table-column#songName {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .column-header#songName .label {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .table-column#songArtist {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .column-header#songArtist .label {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .table-column#songAlbum {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .column-header#songAlbum .label {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .table-column#songDuration {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+.table-view .column-header#songDuration .label {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+#songsListTable *.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+#songsListTable *.increment-arrow,
+#songsListTable *.decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+#songsListTable *.increment-button,
+#songsListTable *.decrement-button {
+    -fx-background-color: transparent;
+}
+
+#songsListTable .thumb {
+    -fx-background-color: #575757;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0em;
+}
+
+#songsListTable .scroll-bar .thumb:hover {
+    -fx-background-color: #878787;
+}
+
+#songsListTable .scroll-bar .thumb:pressed {
+    -fx-background-color: #b7b7b7;
+}
+
+#songsListTable .table-cell {
+    -fx-text-fill: #dcdcdc;
+}
+
+#songsListTable .table-row-cell:selected {
+    -fx-background-color: #c70f5c;
+}
+
+#songsListTable .corner { -fx-background-color: transparent; }
+
+#songsListTable *.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+#songsListTable *.scroll-bar:horizontal .thumb {
+    -fx-background-color: transparent;
+}
+
+#songsListTable *.scroll-bar:horizontal *.increment-button,
+#songsListTable *.scroll-bar:horizontal *.decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+#songsListTable .column-header-background .filler {
+    -fx-background-color: transparent;
+    -fx-padding: 0em;
+}
