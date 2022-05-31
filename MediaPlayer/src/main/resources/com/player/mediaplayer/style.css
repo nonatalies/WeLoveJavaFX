@@ -1,0 +1,530 @@
+* {
+    -fx-pink-color: #e92063;
+    -fx-dark-gray-color: #3a3937;
+}
+
+#tableLabel {
+    -fx-text-fill: #bbdefb;
+    -fx-font-size: 18;
+    -fx-font-family: "Proxima Nova Bold";
+}
+
+.slider {
+    -fx-track-color: -fx-dark-gray-color;
+}
+
+.slider .track {
+    -fx-pref-height: 4.5;
+}
+
+.slider-active-color {
+    -fx-track-color: -fx-pink-color;
+}
+
+.thumb-active-color {
+    -fx-background-color: white !important;
+}
+
+.close-button-active-color {
+    -fx-background-color: #cd1a2b !important;
+}
+
+.top-bar-button-active-color {
+    -fx-background-color: #3f3f3f !important;
+}
+
+.slider .thumb {
+    -fx-background-color: transparent;
+    -fx-pref-height: 10;
+    -fx-pref-width: 10;
+}
+
+.button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+
+.toggle-button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+
+#playSongButton .ikonli-font-icon {
+    -fx-icon-code: "fltfmz-play-24";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 30
+}
+
+#playSongButton:selected .ikonli-font-icon {
+    -fx-icon-code: "fltfmz-pause-24";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 30;
+}
+
+#shuffleButton .ikonli-font-icon {
+    -fx-icon-code: "eva-shuffle-2-outline";
+    -fx-icon-size: 30;
+}
+
+#shuffleButton:selected .ikonli-font-icon {
+    -fx-icon-color: -fx-pink-color;
+}
+
+#previousSongButton .ikonli-font-icon {
+    -fx-icon-code: "fltfmz-previous-24";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 30;
+}
+
+#nextSongButton .ikonli-font-icon {
+    -fx-icon-code: "fltfmz-next-24";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 30;
+}
+
+#repeatSongButton .ikonli-font-icon  {
+    -fx-icon-code: "fltfal-arrow-repeat-all-24";
+    -fx-icon-size: 26;
+}
+
+#repeatSongButton:selected .ikonli-font-icon {
+    -fx-icon-color: -fx-pink-color;
+}
+
+#minimizeButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2w-window-minimize";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#maximizeButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2w-window-maximize";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#maximizeButton:selected .ikonli-font-icon {
+    -fx-icon-code: "mdi2w-window-restore";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#closeButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2w-window-close";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#favoriteButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2h-heart-outline";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 15;
+}
+
+#favoriteButton:hover .ikonli-font-icon {
+    -fx-icon-color: white;
+}
+
+#favoriteButton:selected .ikonli-font-icon {
+    -fx-icon-code: "mdi2h-heart";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 15;
+}
+
+#settingsButton .ikonli-font-icon {
+    -fx-icon-code: "fltfmz-more-16";
+    -fx-icon-color: -fx-pink-color;
+    -fx-icon-size: 16;
+}
+
+#settingsButton:hover .ikonli-font-icon {
+    -fx-icon-color: white;
+}
+
+#albumImage {
+    -fx-effect: dropshadow(gaussian, grey, 30, 0.5, 0, 0);
+}
+
+#controlPane {
+    -fx-background-color: linear-gradient(to top, #d5fbfe, #f3e4df);
+}
+
+#volumeSlider {
+    -fx-gradient-color: linear-gradient(to right, -fx-track-color 50%, #a9a9a9 50%) !important;
+}
+
+#volumeSlider .track {
+    -fx-background-color: -fx-gradient-color;
+}
+
+#durationSlider .track {
+    -fx-background-color: linear-gradient(to right, -fx-track-color 0%, #a9a9a9 0%) !important;
+}
+
+#songsListTable {
+   -fx-background-color: #313233;
+   -fx-border-color: transparent;
+   -fx-border-width: 1;
+}
+
+#songsListTable .column-header {
+    -fx-background-color: transparent;
+}
+
+#songsListTable .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: #dcdcdc;
+}
+
+#songsListTable .column-header-background {
+   -fx-background-color: #313233;
+}
+
+.cell-style, #songsListTable .table-row-cell {
+    -fx-border-width: 0;
+    -fx-cell-size: 25;
+    -fx-padding: 0;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-table-cell-border-color: transparent;
+    -fx-control-inner-background: #313233;
+    -fx-control-inner-background-alt: #3c3c3d;
+}
+
+.favorite-table-button-alignment {
+    -fx-alignment: CENTER;
+}
+
+.settings-table-button-alignment {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .table-column#songNumber {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+.table-view .column-header#songNumber .label {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+.table-view .table-column#songName {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .column-header#songName .label {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .table-column#songArtist {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .column-header#songArtist .label {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .table-column#songAlbum {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .column-header#songAlbum .label {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-view .table-column#songDuration {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+.table-view .column-header#songDuration .label {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+#songsListTable *.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+#songsListTable *.increment-arrow,
+#songsListTable *.decrement-arrow {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+#songsListTable *.increment-button,
+#songsListTable *.decrement-button {
+    -fx-background-color: transparent;
+}
+
+#songsListTable .thumb {
+    -fx-background-color: #575757;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0em;
+}
+
+#songsListTable .scroll-bar .thumb:hover {
+    -fx-background-color: #878787;
+}
+
+#songsListTable .scroll-bar .thumb:pressed {
+    -fx-background-color: #b7b7b7;
+}
+
+#songsListTable .table-cell {
+    -fx-text-fill: #dcdcdc;
+}
+
+#songsListTable .table-row-cell:selected {
+    -fx-background-color: #c70f5c;
+}
+
+#songsListTable .corner { -fx-background-color: transparent; }
+
+#songsListTable *.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+#songsListTable *.scroll-bar:horizontal .thumb {
+    -fx-background-color: transparent;
+}
+
+#songsListTable *.scroll-bar:horizontal *.increment-button,
+#songsListTable *.scroll-bar:horizontal *.decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+#songsListTable .column-header-background .filler {
+    -fx-background-color: transparent;
+    -fx-padding: 0em;
+}
+
+.context-menu {
+    -fx-background-color: #19141a;
+    -fx-text-fill: white;
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.context-menu .menu-item:focused {
+    -fx-background-color: -fx-pink-color;
+}
+
+.context-menu .menu-item .label {
+    -fx-text-fill: white;
+}
+
+.context-menu .menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+#importPlayListButton .ikonli-font-icon {
+    -fx-icon-code: "eva-arrow-downward";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#importPlayListButton {
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-background-radius: 8;
+    -fx-background-color: -fx-pink-color;
+    -fx-text-fill: white;
+}
+
+#importPlayListButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-pink-color;
+}
+
+#importPlayListButton:hover .ikonli-font-icon {
+    -fx-icon-color: -fx-pink-color;
+}
+
+#importPlayListButton:pressed {
+    -fx-opacity: 0.8;
+}
+
+#addPlayListButton .ikonli-font-icon {
+    -fx-icon-code: "fltfal-add-square-24";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#addPlayListButton {
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-background-radius: 8;
+    -fx-background-color: -fx-pink-color;
+    -fx-text-fill: white;
+}
+
+#addPlayListButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-pink-color;
+}
+
+#addPlayListButton:hover .ikonli-font-icon {
+    -fx-icon-color: -fx-pink-color;
+}
+
+#addPlayListButton:pressed {
+    -fx-opacity: 0.8;
+}
+
+#playListsListView {
+    -fx-background-color: linear-gradient(to top, #d5fbfe, #f3e4df);
+    -fx-background-insets: 0;
+}
+
+#playListsListView {
+    -fx-padding: 0;
+}
+
+#playListsListView .list-cell {
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-alignment: CENTER-RIGHT;
+    -fx-padding: 10;
+}
+
+#playListsListView .list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: -fx-pink-color;
+    -fx-text-fill: white;
+}
+
+#playListsListView .list-cell:even {
+    -fx-background-color: transparent;
+}
+
+#playListsListView .list-cell:odd {
+    -fx-background-color: transparent;
+}
+
+#playListsListView .list-cell:filled:hover {
+    -fx-background-color: -fx-pink-color;
+    -fx-text-fill: white;
+}
+
+#folderButton .ikonli-font-icon {
+    -fx-icon-code: "mdi2f-folder-open";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#folderButton {
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-background-radius: 8;
+    -fx-background-color: -fx-pink-color;
+    -fx-text-fill: white;
+}
+
+#folderButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-pink-color;
+}
+
+#folderButton:hover .ikonli-font-icon {
+    -fx-icon-color: -fx-pink-color;
+}
+
+#folderButton:pressed {
+    -fx-opacity: 0.8;
+}
+
+#likedTracksButton .ikonli-font-icon {
+    -fx-icon-code: "eva-heart-outline";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#likedTracksButton {
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-background-radius: 8;
+    -fx-background-color: -fx-pink-color;
+    -fx-text-fill: white;
+}
+
+#likedTracksButton:hover .ikonli-font-icon {
+    -fx-icon-code: "eva-heart";
+    -fx-icon-color: -fx-pink-color;
+}
+
+#likedTracksButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-pink-color;
+}
+
+#likedTracksButton:pressed {
+    -fx-opacity: 0.8;
+}
+
+#likedTracksButton:selected .ikonli-font-icon {
+    -fx-icon-code: "eva-heart";
+    -fx-icon-color: -fx-pink-color;
+}
+
+#likedTracksButton:selected {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-pink-color;
+}
+
+#showQueueButton .ikonli-font-icon {
+    -fx-icon-code: "eva-list";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#showQueueButton {
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-background-radius: 8;
+    -fx-background-color: -fx-pink-color;
+    -fx-text-fill: white;
+}
+
+#showQueueButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-pink-color;
+}
+
+#showQueueButton:hover .ikonli-font-icon {
+    -fx-icon-color: -fx-pink-color;
+}
+
+#showQueueButton:pressed {
+    -fx-opacity: 0.8;
+}
+
+#showAllTracksButton .ikonli-font-icon {
+    -fx-icon-code: "eva-menu";
+    -fx-icon-color: white;
+    -fx-icon-size: 15;
+}
+
+#showAllTracksButton {
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-family: "Proxima Nova Bold";
+    -fx-background-radius: 8;
+    -fx-background-color: -fx-pink-color;
+    -fx-text-fill: white;
+}
+
+#showAllTracksButton:hover {
+    -fx-background-color: white;
+    -fx-text-fill: -fx-pink-color;
+}
+
+#showAllTracksButton:hover .ikonli-font-icon {
+    -fx-icon-color: -fx-pink-color;
+}
+
+#showAllTracksButton:pressed {
+    -fx-opacity: 0.8;
+}
